@@ -6,6 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>air asia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+  <style>
+    li {
+      list-style-type: none;
+      /* Убираем маркеры */
+    }
+
+    ul {
+      margin-left: 0;
+      /* Отступ слева в браузере IE и Opera */
+      padding-left: 0;
+      /* Отступ слева в браузере Firefox, Safari, Chrome */
+    }
+  </style>
 </head>
 
 <body>
@@ -18,9 +36,9 @@
       </div>
       <nav class="menu">
         <ul class="menu__list">
-          <li><a href="/" class="menu__title">Главная</a></li>
-          <li><a href="/services" class="menu__services">Услуги</a></li>
-          <li><a href="/reviews" class="menu__services">Отзывы</a></li>
+          <li class="menu__item"><a href="/">Главная</a></li>
+          <li class="menu__item"><a href="/services">Услуги</a></li>
+          <li class="menu__item"><a href="/reviews">Отзывы</a></li>
         </ul>
       </nav>
       <address class="contacts">
@@ -39,122 +57,138 @@
         <section class="banner">
           <h1 class="banner__caption"><b>Авторские туры по Азии</b></h1>
           <p class="banner__text">Открой для себя Азию</p>
-          <a href="#" class="banner__link"></a> <button class="banner__button">подробнее</button>
+          <button class="banner__button">подробнее</button>
         </section>
         <div class="hot-tours">
-          <h2 class="hot-tours__caption">Горящие туры</h2>
-          <a href="/" class="hot-tours__link">
-            <img src="./img/flame.png" alt="относительный путь" class="hot-tours__icon">
-          </a>
-          <div class="tours-cart">
-            <a href="/" class="tours-cart__link">
-              <img src="./img/river.jpg" alt="относительный путь" class="tours-cart__pic">
+          <div class="hot-tors__header">
+            <h2 class="hot-tours__caption">Горящие туры</h2>
+            <a href="/" class="hot-tours__link">
+              <img src="./img/flame.png" alt="относительный путь" class="hot-tours__icon">
             </a>
-            <h3 class="tours-cart__country">Тайланд</h3>
-            <div class="tours-options">
-              <a href="/" class="tours-options__link">
-                <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__timeline">7-12 ночей</h4>
-              <a href="/" class="tours-options__link">
-                <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__eating">Завтраки</h4>
-            </div>
-            <div class="tours-description">
-              <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности позволяет
-                оценить значение систем массового участия.</p>
-            </div>
           </div>
-          <a href="#" class="tours-cart__button-link"></a> <button class="tours-cart__button">смотреть</button>
-          <div class="tours-cart">
-            <a href="/" class="tours-cart__link">
-              <img src="./img/pool.jpg" alt="относительный путь" class="tours-cart__pic">
-            </a>
-            <h3 class="tours-cart__country">Бали</h3>
-            <div class="tours-options">
-              <a href="/" class="tours-options__link">
-                <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__timeline">7-12 ночей</h4>
-              <a href="/" class="tours-options__link">
-                <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__eating">Завтраки</h4>
-            </div>
-            <div class="tours-description">
-              <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности
-                позволяет оценить значение систем массового участия.</p>
-            </div>
-            <a href="#" class="tours-cart__button-link"></a> <button class="tours-cart__button">смотреть</button>
-          </div>
-          <div class="tours-cart">
-            <a href="/" class="tours-cart__link">
-              <img src="./img/ocean.jpg" alt="относительный путь" class="tours-cart__pic">
-            </a>
-            <h3 class="tours-cart__country">Индонезия</h3>
-            <div class="tours-options">
-              <a href="/" class="tours-options__link">
-                <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__timeline">7-12 ночей</h4>
-              <a href="/" class="tours-options__link">
-                <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
-              </a>
-              <h4 class="tours-options__eating">Завтраки</h4>
-            </div>
-            <div class="tours-description">
-              <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности позволяет
-                оценить значение систем массового участия.</p>
-            </div>
-            <a href="#" class="tours-cart__button-link"></a> <button class="tours-cart__button">смотреть</button>
-          </div>
+          <ul class="hot-tours__list">
+            <li class="hot-tours__item">
+              <div class="tours-cart">
+                <a href="/" class="tours-cart__link">
+                  <img src="./img/river.jpg" alt="относительный путь" class="tours-cart__pic">
+                </a>
+                <h3 class="tours-cart__country">Тайланд</h3>
+                <div class="tours-options">
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__timeline">7-12 ночей</h4>
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__eating">Завтраки</h4>
+                </div>
+                <div class="tours-description">
+                  <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности
+                    позволяет
+                    оценить значение систем массового участия.</p>
+                </div>
+                <button class="tours-cart__button">смотреть</button>
+              </div>
+            </li>
 
+            <li class="hot-tours__item">
+              <div class="tours-cart">
+                <a href="/" class="tours-cart__link">
+                  <img src="./img/pool.jpg" alt="относительный путь" class="tours-cart__pic">
+                </a>
+                <h3 class="tours-cart__country">Бали</h3>
+                <div class="tours-options">
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__timeline">7-12 ночей</h4>
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__eating">Завтраки</h4>
+                </div>
+                <div class="tours-description">
+                  <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности
+                    позволяет оценить значение систем массового участия.</p>
+                </div>
+                <button class="tours-cart__button">смотреть</button>
+              </div>
+            </li>
+
+            <li class="hot-tours__item">
+              <div class="tours-cart">
+                <a href="/" class="tours-cart__link">
+                  <img src="./img/ocean.jpg" alt="относительный путь" class="tours-cart__pic">
+                </a>
+                <h3 class="tours-cart__country">Индонезия</h3>
+                <div class="tours-options">
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__timeline">7-12 ночей</h4>
+                  <a href="/" class="tours-options__link">
+                    <img src="./img/meal.png" alt="относительный путь" class="tours-options__icon">
+                  </a>
+                  <h4 class="tours-options__eating">Завтраки</h4>
+                </div>
+                <div class="tours-description">
+                  <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности
+                    позволяет
+                    оценить значение систем массового участия.</p>
+                </div>
+                <button class="tours-cart__button">смотреть</button>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <aside class="news-shares">
-          <h2 class="news-shares__caption">Новости и акции</h2>
-          <div class="news">
-            <a href="/" class="news__link">
-              <img src="./img/plain.jpg" alt="относительный путь" class="news__pic">
+        <aside class="aside">
+          <div class="aside__header">
+            <h2 class="aside__caption">Новости и акции</h2>
+          </div>
+          <div class="news-shares">
+            <a href="/" class="news-shares__link">
+              <img src="./img/plain.jpg" alt="относительный путь" class="news-shares__pic">
             </a>
-            <date class="news__date">
-              <span class="news__date-month">Декабрь</span> <span class="news__date-year">2019</span>
+            <date class="news-shares__date">
+              <span class="news-shares__date-month">Декабрь</span> <span class="news-shares__date-year">2019</span>
             </date>
-            <div class="news__description">
-              <h3 class="news__caption"><b>Дешевые путевки на Новый Год!</b></h3>
-              <p class="news__paragraph">Проведи новый год в Тайланде</p>
+            <div class="news-shares__description">
+              <h3 class="news-shares__caption"><b>Дешевые путевки на Новый Год!</b></h3>
+              <p class="news-shares__paragraph">Проведи новый год в Тайланде</p>
             </div>
           </div>
-          <div class="stocks">
-            <a href="/" class="stocks__link">
+          <div class="news-shares">
+            <a href="/" class="news-shares__link">
               <img src="./img/Surfer.jpg" alt="относительный путь" class="stocks__pic">
             </a>
-            <date class="stocks__date">
-              <span class="stocks__date-month">Декабрь</span> <span class="stocks__date-year">2019</span>
+            <date class="news-shares__date">
+              <span class="news-shares__date-month">Декабрь</span> <span class="news-shares__date-year">2019</span>
             </date>
-            <div class="stocks__description">
-              <h3 class="stocks__caption"><b>Акция для серфенгистов!</b></h3>
-              <p class="stocks__paragraph">В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов.
+            <div class="news-shares__description">
+              <h3 class="news-shares__caption"><b>Акция для серфенгистов!</b></h3>
+              <p class="news-shares__paragraph">В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов.
                 Удачного пути!</p>
             </div>
           </div>
         </aside>
 
         <div class="paginator">
-          <div class="paginator__display">Страница 1 из 7</div>
-          <a href="#">&laquo;</a>
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#">7</a>
-          <a href="#">&raquo;</a>
+          <div class="paginator__display">Страница 1 из 7
+            <ul class="paginator__list">
+              <li class="paginator__item"><a class="active" href="#">1</a></li>
+              <li class="paginator__item"><a href="#">2</a></li>
+              <li class="paginator__item"><a href="#">3</a></li>
+              <li class="paginator__item"><a href="#">4</a></li>
+              <li class="paginator__item"><a href="#">5</a></li>
+              <li class="paginator__item"><a href="#">6</a></li>
+              <li class="paginator__item"><a href="#">7</a></li>
+            </ul>
+          </div>
         </div>
         <section class="about-us">
-          <a href="/" class="dop1about-us__link">
+          <a href="/" class="about-us__link">
             <img src="./img/gates.jpg" alt="относительный путь" class="about-us__pic">
           </a>
           <a href="/" class="about-us__link">
@@ -166,21 +200,20 @@
             осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
             домашних условиях.
           </p>
-          <a href="#" class="about-us__link"></a> <button class="about-us__button">подробнее</button>
+          <button class="about-us__button">подробнее</button>
         </section>
       </main>
-      <hr>
       <footer class="footer">
         <div class="logo">
           <a href="/" class="logo__link">
-            <img src="./img/лого.png" alt="Абсолютная ссылка" class="logo__pic">
+            <img src="./img/лого.png" alt="относительный путь" class="logo__pic">
           </a>
         </div>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item">Главная</li>
-            <li class="menu__item">Услуги</li>
-            <li class="menu__item">Отзывы</li>
+            <li class="menu__item"><a href="/">Главная</a></li>
+            <li class="menu__item"><a href="/services">Услуги</a></li>
+            <li class="menu__item"><a href="/reviews">Отзывы</a></li>
           </ul>
         </nav>
         <div class="networks">
