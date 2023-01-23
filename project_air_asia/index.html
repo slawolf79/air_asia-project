@@ -18,13 +18,25 @@
       padding-left: 0;
       /* Отступ слева в браузере Firefox, Safari, Chrome */
     }
+
     ul li {
       list-style-type: none;
       /* Убираем маркеры */
     }
-    h1, h2, h3, h4, h5, h6, p {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
       margin: 0;
       font-weight: normal;
+    }
+
+    * {
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -74,7 +86,9 @@
                   <a href="/" class="tours-cart__link">
                     <img src="./img/river.jpg" alt="относительный путь" class="tours-cart__pic">
                   </a>
-                  <h3 class="tours-cart__country">Тайланд</h3>
+                </div>
+                <div class="tours-content">
+                  <h3 class="tours-content__country">Тайланд</h3>
                   <div class="tours-options">
                     <a href="/" class="tours-options__link">
                       <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
@@ -90,8 +104,10 @@
                       позволяет
                       оценить значение систем массового участия.</p>
                   </div>
-                  <button class="tours-cart__button">смотреть</button>
+                  <button class="tours-content__button">смотреть</button>
+
                 </div>
+
               </li>
 
               <li class="hot-tours__item">
@@ -99,7 +115,9 @@
                   <a href="/" class="tours-cart__link">
                     <img src="./img/pool.jpg" alt="относительный путь" class="tours-cart__pic">
                   </a>
-                  <h3 class="tours-cart__country">Бали</h3>
+                </div>
+                <div class="tours-content">
+                  <h3 class="tours-content__country">Бали</h3>
                   <div class="tours-options">
                     <a href="/" class="tours-options__link">
                       <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
@@ -114,8 +132,10 @@
                     <p class="tours-description__paragraph">Равным образом постоянное обеспечение нашей деятельности
                       позволяет оценить значение систем массового участия.</p>
                   </div>
-                  <button class="tours-cart__button">смотреть</button>
+                  <button class="tours-content__button">смотреть</button>
+
                 </div>
+
               </li>
 
               <li class="hot-tours__item">
@@ -123,7 +143,9 @@
                   <a href="/" class="tours-cart__link">
                     <img src="./img/ocean.jpg" alt="относительный путь" class="tours-cart__pic">
                   </a>
-                  <h3 class="tours-cart__country">Индонезия</h3>
+                </div>
+                <div class="tours-content">
+                  <h3 class="tours-content__country">Индонезия</h3>
                   <div class="tours-options">
                     <a href="/" class="tours-options__link">
                       <img src="./img/calendar.png" alt="относительный путь" class="tours-options__icon">
@@ -139,14 +161,16 @@
                       позволяет
                       оценить значение систем массового участия.</p>
                   </div>
-                  <button class="tours-cart__button">смотреть</button>
+                  <button class="tours-content__button">смотреть</button>
+
                 </div>
+
               </li>
             </ul>
           </section>
           <section class="news">
-            <div class="aside__header">
-              <h2 class="aside__caption">Новости и акции</h2>
+            <div class="news__header">
+              <h2 class="news__caption">Новости и акции</h2>
             </div>
             <ul class="news__list">
               <li class="news__item">
