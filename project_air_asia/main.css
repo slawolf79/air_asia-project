@@ -1,16 +1,18 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background: #001821;
+  width: 1920px;
+  height: 2930px;
   color: aliceblue;
 }
 
 .wrapper {
-  background: url('./img/background1.png');
+  background: url('./img/bg1.png') center top no-repeat, url('./img/bg2.png') right bottom no-repeat;
   position: relative;
   width: 1920px;
   height: 2930px;
   left: 0px;
   top: 0px;
-  overflow: scroll;
 }
 
 .container {
