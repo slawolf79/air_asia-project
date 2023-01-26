@@ -508,7 +508,7 @@ section {
 
 .footer .networks {
   display: inline-block;
-  top: 106px;
+  bottom: 26.64px;
   right: 265px;
   vertical-align: middle;
   position: absolute;
