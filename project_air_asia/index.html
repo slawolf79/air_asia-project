@@ -10,12 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="main.css">
   <style>
     ul {
-      margin-left: 0;
+      margin: 0px;
       /* Отступ слева в браузере IE и Opera */
-      padding-left: 0;
+      padding: 0px;
       /* Отступ слева в браузере Firefox, Safari, Chrome */
     }
 
@@ -249,10 +249,13 @@
                   <li class="menu__item"><a href="/reviews" class="menu__link">Отзывы</a></li>
                 </ul>
               </nav>
-              <ul class="networks">
-                <li class="networks__item networks__item--icon--tg"><a href="#" class="networks__link"></a></li>
-                <li class="networks__item networks__item--icon--vk"><a href="#" class="networks__link"></a></li>
-              </ul>
+              <div class="networks">
+                <ul class="networks__list">
+                  <li class="networks__item networks__item--icon--tg"><a href="#" class="networks__link"></a></li>
+                  <li class="networks__item networks__item--icon--vk"><a href="#" class="networks__link"></a></li>
+                </ul>
+              </div>
+              
               <address class="contacts">
                 <div class="contacts__info">Бесплатный звонок по России</div>
                 <a href="tel.:88007003030" class="contacts__phone">8 800 700 30 30</a>

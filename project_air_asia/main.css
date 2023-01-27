@@ -1,18 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: #001821;
-  width: 1920px;
-  height: 2930px;
   color: aliceblue;
+  margin: 0px;
 }
 
 .wrapper {
   background: url('./img/bg1.png') center top no-repeat, url('./img/bg2.png') right bottom no-repeat;
-  position: relative;
-  width: 1920px;
-  height: 2930px;
   left: 0px;
   top: 0px;
+  overflow: auto;
 }
 
 .container {
@@ -24,8 +21,7 @@ body {
 .header {
   height: 123.36px;
   position: relative;
-  top: 26.64px;
-  left: 0px;
+  margin-top: 26.64px;
 }
 
 .logo {
@@ -45,7 +41,7 @@ body {
 
 .contacts {
   position: absolute;
-  top: 26.64px;
+  top: 36.64px;
   right: 0px;
   color: #ffffff;
   font-style: normal;
@@ -57,15 +53,19 @@ body {
   text-decoration: none;
 }
 
+.menu__list {
+  margin-top: 19px;
+}
+
 .menu__item {
   display:inline-block;
   vertical-align: middle;
-  margin-right: 52px;
+  margin-right: 50px;
 
 
 }
 
-.menu__item [href ="/reviews"] {
+.menu__item:last-child {
   margin-right: 0px;
 }
 .menu__link {
@@ -91,7 +91,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-decoration: underline;
-  color: #FF160D;
+  color: #FFFFFF;
 
 }
 
@@ -179,7 +179,9 @@ body {
   border-radius: 5px;
   border-color: #F5170E;
 }
-
+.hot-tours__item:last-child {
+  margin-right: 0px;
+}
 .tours-cart {
   min-height: 144px;
 
@@ -322,6 +324,10 @@ body {
   position: relative;
   overflow: hidden;
  }
+
+ .news__item:last-child {
+  margin-right: 0px;
+ }
 .news__link {
   display: inline-block;
 }
@@ -403,7 +409,7 @@ body {
   height: 32px;
   border-radius: 50%;
   font-weight: bold;
-  line-height: 21px;
+  line-height: 30px;
   text-decoration: none;
   
 }
@@ -426,11 +432,11 @@ section {
   margin-bottom: 53px;
   display: inline-block;
   vertical-align: top;
-  width: 785px;
+  width: 746px;
   height: 455px;
   border-radius: 5px;
-  margin-left: 356px;
-  margin-top: -409px;
+  margin-left: -100px;
+  margin-top: 100px;
   
 }
 
@@ -499,33 +505,24 @@ section {
 
   left: 0px;
 }
-
 .footer .menu {
   display: inline-block;
-
-  margin-right: 274px;
 }
-
 .footer .networks {
   display: inline-block;
-  top: 80px;
-  right: 265px;
+  top: 33px;
+  right: 356px;
   vertical-align: middle;
   position: absolute;
-
 }
-
 .footer .networks__item {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
-
 .footer .networks__item:last-child {
   margin-right: 0px;
 }
-
-
 .footer .networks__item--icon--tg .networks__link {
   background-image: url('./img/telegram.png');
 }
@@ -546,14 +543,12 @@ section {
   width: 36px;
   height: 36px;
   text-decoration: none;
-
 }
-
 .footer .contacts {
+  top: 26.64px;
   right: 0px;
   color: #ffffff;
 }
-
 .footer .contacts__info {
   margin-bottom: 6.5px;
   font-style: normal;
