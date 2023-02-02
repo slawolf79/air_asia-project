@@ -10,6 +10,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
+  min-width: 1920px;
 }
 
 
@@ -76,10 +78,7 @@ body {
   vertical-align: middle;
   margin-right: 50px;
 
-
 }
-
-.menu__item--active {}
 
 
 .menu__item:last-child {
