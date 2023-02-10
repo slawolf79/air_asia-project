@@ -105,7 +105,7 @@ body {
 }
 
 .dropdown:hover .dropdown__menu {
-  left: 0px;
+  right: 0px;
   opacity: .8;
 
 }
@@ -125,11 +125,11 @@ body {
   border-radius: 10px;
   top: 100%;
   padding: 22px 19px;
-  left: -9999px;
+  right: -9999px;
   opacity: 0;
   transition: opacity .4s;
   margin-top: 16px;
-  margin-left: 29px;
+
      
 }
 .dropdown__menu:before {
